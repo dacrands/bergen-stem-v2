@@ -9,13 +9,13 @@ const Landing = () => (
         <h1>David Crandall</h1>
         <h3>React / Flask Developer</h3>
         <p>
-            Although I am primarily a web-developer,
-            my first introduction to programming was data visualization.
+        From responsive web-design to user authentication, 
+        I love all aspects of building a website.
             </p>
-        <p>
+        {/* <p>
             This site documents some of my old and perhaps
             new data science projects. Thanks for stopping by!
-            </p>
+            </p> */}
     </div>
     <div className="main__side">
         {/* <h3>Links</h3> */}

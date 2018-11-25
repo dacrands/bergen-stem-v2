@@ -4,11 +4,15 @@ import { Link } from 'gatsby'
 const Navbar = ({ siteTitle }) => (
   <nav className="navbar">    
     <div className="navbar__link">
-      <a href="">About
-      </a>      
-      <hr className="navbar__hr"/>
+    <Link to="/"
+      activeStyle={{color:"blue"}}
+    >
+    Home           
+    </Link>
+    <hr className="navbar__hr"/>
     </div>
     <div className="navbar__link">
+      
       <a href="">Services</a>
       <hr className="navbar__hr"/>
     </div>

@@ -6,13 +6,18 @@ import Layout from '../components/layout'
 import Landing from '../components/landing'
 import Info from '../components/info'
 import Projects from '../components/projects'
+import Skills from '../components/skills'
 
 const IndexPage = () => (
-  <Layout>      
-    <Landing />
-    <Info />
-    <Projects />
-   
+  <Layout>
+    <div className="container">
+      <Landing />
+      <Info />
+      <Projects />
+    </div>
+
+  <Skills />
+    
   </Layout>
 )
 

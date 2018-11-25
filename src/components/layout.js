@@ -29,9 +29,9 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>        
           <Navbar siteTitle={data.site.siteMetadata.title} />
-          <div className="container">
+      
             {children}
-          </div>
+
       </>
     )}
   />
