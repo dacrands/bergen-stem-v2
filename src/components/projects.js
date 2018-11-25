@@ -12,7 +12,10 @@ const Projects = () => (
       <h3>Some of the things I've built</h3>
     </header>
     <div className="projects__main">
-      <div className="card">
+      <div className="card">        
+        <div className="card__img">
+          <Image />
+        </div>
         <div className="card__content">
           <div className="card__title">
             <h3>New York Times App</h3>
@@ -30,13 +33,13 @@ const Projects = () => (
             <a href="">Github</a>
           </div>
         </div>
-        <div className="card__img">
-          <Image />
-        </div>
       </div>
       <div className="card">
-        <div className="card__content">
-          <div className="card__title">
+      <div className="card__img">
+          <ImageTwo />
+        </div>
+        <div className="card__content">               
+        <div className="card__title">
             <h3>To View It</h3>
             <p><em>Flask, Heroku, Postgreql</em></p>
           </div>
@@ -53,11 +56,12 @@ const Projects = () => (
             <a href="">Github</a>
           </div>
         </div>
-        <div className="card__img">
-          <ImageTwo />
-        </div>
       </div>
       <div className="card">
+        
+        <div className="card__img">
+          <ImageThree />
+        </div>
         <div className="card__content">
           <div className="card__title">
             <h3>Bergen STEM</h3>
@@ -71,9 +75,6 @@ responsive web-design via custom CSS</em></p>
             <a href="https://times.dcrands.com">NYT App</a>
             <a href="">Github</a>
           </div>
-        </div>
-        <div className="card__img">
-          <ImageThree />
         </div>
       </div>
 
