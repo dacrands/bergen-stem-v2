@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Navbar from './navbar'
 import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children }) => (  
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>        
           <Navbar siteTitle={data.site.siteMetadata.title} />
-      
+          
             {children}
 
       </>
