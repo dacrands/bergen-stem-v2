@@ -5,7 +5,8 @@ const Info = () => (
         <div className="info__item">
             <h3>Languages</h3>
             <p>
-                JavaScript, Python, HTML5, CSS3
+                JavaScript (NodeJS, ES6), Python, 
+                HTML5, CSS3 (BEM)
               </p>
         </div>
         <div className="info__item">
@@ -18,8 +19,8 @@ const Info = () => (
         <div className="info__item">
             <h3>Tools</h3>
             <p>
-                Git/Github, Digitalocean, Heroku,
-
+                Git/Github, Nginx,
+                Digitalocean, Heroku
               </p>
         </div>
     </section>

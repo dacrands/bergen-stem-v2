@@ -3,6 +3,7 @@ import React from 'react'
 import Image from '../components/image'
 import ImageTwo from '../components/imageTwo'
 import ImageThree from '../components/imageThree'
+import ImageFour from '../components/imageFour'
 
 
 const Projects = () => (
@@ -70,6 +71,26 @@ responsive web-design via custom CSS</em></p>
           </div>
           <p>Showcases student projects, scholarship opportunities,
             and department information for the STEM program at Bergen Community College.
+          </p>
+          <div className="card__links">
+            <a href="https://times.dcrands.com">NYT App</a>
+            <a href="">Github</a>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        
+        <div className="card__img">
+          <ImageFour />
+        </div>
+        <div className="card__content">
+          <div className="card__title">
+            <h3>Blog</h3>
+            <p><em>GatsbyJS, Markdown CMS, Styled components,
+              YAML front matter</em></p>
+          </div>
+          <p>
+            Personal blog site where I write about programming.
           </p>
           <div className="card__links">
             <a href="https://times.dcrands.com">NYT App</a>
