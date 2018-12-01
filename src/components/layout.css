@@ -7,7 +7,10 @@ html {
 }
 body {
   margin: 0;
-  padding-top: 32px;
+  padding-top: 32px;  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 article,
 aside,
@@ -688,21 +691,30 @@ pre tt:after {
   color: rgb(117, 127, 129);
   height: 100%;  
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  /* transform: scaleX(0);   */
 }
+
 
 .navbar__hr {
   width: 0;
   transform-origin: 100%;
   transition: all 200ms ease;
   margin: 0;
+  
 }
-
+/* 
 .navbar__link:hover .navbar__hr {
   width: 100%;
   background: blue;
-}
-.navbar__link:hover  a {
+} */
+
+.navbar__link a:hover  {
   color: blue;
+  /* border-bottom: 1px solid blue; */
+  /* color: white;   */
+  /* background: #dadada; */
+  /* transform: scaleX(1);   */
 }
 
 
@@ -900,7 +912,7 @@ pre tt:after {
 .about {
   /* position: relative; */
   /* display: flex; */
-  /* background: #000; */
+  /* background: #000; */  
 }
 
 .about p {
@@ -912,18 +924,13 @@ pre tt:after {
   clear: left;
 }
 
-
 .logos__container {
   position: absolute;
   top: 32px;
   bottom: 0;
   right: 0;
-  left: 0;
-  /* width: 500px; */
-  /* background:rgba(105, 24, 24, 0.973); */
-  
-  margin: 0 auto;
-  /* outline: 4px dashed red; */
+  left: 0;    
+  margin: 0 auto;  
   z-index: -1;
 }
 
@@ -935,18 +942,14 @@ pre tt:after {
   left: 0;
   position: absolute;
 }
+
 .logos {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 100%;
-  /* outline: 4px dashed green; */
-  /* position: relative;  
-   */
+  height: 100%;  
 }
-
-
 
 .logos__svg {
   /* max-width: 100px; */
@@ -998,7 +1001,40 @@ pre tt:after {
 
 .form__item button:hover {
   background: #131314;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+}
+
+.footer {
+  position: relative;
+  background: #131314;  
+  color: white;  
+  text-align: center;  
+  padding: 1rem 0;  
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  /* border-bottom: 1px solid #454555; */
+  margin: 0 1rem;
+}
+
+.footer a {
+  color: #adadc0;  
+  text-decoration: none;
+}
+
+.footer p {
+  color: #cbcbd8;
+  margin: 0;
+  margin-top: .5rem;
 }
 
 

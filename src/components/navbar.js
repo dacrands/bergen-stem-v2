@@ -19,16 +19,16 @@ class Navbar extends Component {
       >
       Home           
       </Link>      
-      <hr className="navbar__hr"/>
+      {/* <hr className="navbar__hr"/> */}
       </div>
       <div className="navbar__link">
       <Link to="/about"
         activeStyle={{color:"blue"}}
       >
       About   
-         
+      {/* <hr className="navbar__hr"/>    */}
       </Link>
-      <hr className="navbar__hr"/>          
+             
       </div>
       {/* <div className="navbar__link">
         <a href="">Projects</a>
