@@ -682,17 +682,13 @@ pre tt:after {
 
 .navbar__link a {
   display: block;      
-  padding: 0.25rem 2rem;
-  /* padding-left: 0; */
-  /* background: #000; */
+  padding: 0.25rem 2rem;  
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   color: rgb(117, 127, 129);
   height: 100%;  
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  /* transform: scaleX(0);   */
+  text-decoration: none;  
 }
 
 
@@ -703,41 +699,18 @@ pre tt:after {
   margin: 0;
   
 }
-/* 
-.navbar__link:hover .navbar__hr {
-  width: 100%;
-  background: blue;
-} */
 
 .navbar__link a:hover  {
   color: blue;
-  /* border-bottom: 1px solid blue; */
-  /* color: white;   */
-  /* background: #dadada; */
-  /* transform: scaleX(1);   */
 }
 
 
-.main {
-  /* outline: 4px dashed darkcyan; */
-  /* padding: 1rem; */
-  margin: 5vh 0;
-  /* display: grid; */
-  /* grid-template-columns: min-content 1fr; */
-  /* grid-gap: 30px; */
-  
-  display: flex;
-  /* flex-direction: column; */
+.main {  
+  margin: 5vh 0;  
+  display: flex;  
   justify-content: space-around;
   align-items: center;
-  padding: 5vh 0;
-  /* border-left: 1px dashed blue; */
-  /* border-right: 1px dashed blue; */
-  /* border: 1px dashed rgb(143, 155, 158); */
-  /* border-top: 1px dashed blue; */
-  /* border-bottom: 1px dashed blue; */
-  /* border: 1px dashed blue; */
-
+  padding: 5vh 0;  
 }
 
 .main > div {
@@ -909,12 +882,6 @@ pre tt:after {
   font-weight: 400;
 }
 
-.about {
-  /* position: relative; */
-  /* display: flex; */
-  /* background: #000; */  
-}
-
 .about p {
   max-width: 400px;  
   color: rgb(89, 89, 114);  
@@ -988,8 +955,8 @@ pre tt:after {
   border: 1px dashed rgb(110, 102, 102);  
   /* border: 1px dashed blue;   */
 }
-
-.form__item button {
+ 
+.button {
   background: blue;
   border: none;
   color: white;
@@ -997,11 +964,54 @@ pre tt:after {
   cursor: pointer;
   transition: all 200ms ease;
   border-radius: 2px;
+  text-decoration: none;
 }
 
-.form__item button:hover {
+.button:hover {
   background: #131314;
   transform: translateY(-2px);
+}
+
+.success {
+  height: calc(50vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.success h1 {
+  color: blue
+}
+
+.success h3 {
+  font-weight: 400;
+}
+
+.success .button {
+  margin-top: 2rem;
+}
+
+.success__text {
+  text-align: center;
+  animation: show-check 900ms ease;  
+}
+
+.success__check {
+  font-size: 8rem;
+  line-height: 100%;
+  animation: show-check 350ms ease;
+}
+
+@keyframes show-check {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer {

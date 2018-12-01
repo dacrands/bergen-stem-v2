@@ -16,49 +16,48 @@ const IndexPage = () => (
       <Projects />
     </div>
 
-  <Skills />
+    <Skills />
 
-  <section className="contact">
-    <div className="container">
-      <header className="contact__title">  
-      {/* <h1>Contact</h1> */}
-      <h2>Get in touch</h2>
-      </header>    
-      <div className="contact__form">
-      <form className="form" action="" className="form">
-        <div className="form__item">
-          <label htmlFor="name">
-            Name
-            <input name="name" type="text"/>
-          </label>        
-        </div>        
-        <div className="form__item">
-          <label htmlFor="email">
-            Email
-            <input name="email" type="email"/>
-          </label>        
-        </div>        
-        <div className="form__item">
-          <label htmlFor="message">
-            Message me!
-            <textarea 
-              name="message" 
-              id="message" 
-              cols="30" 
-              rows="10">
-            </textarea>
-          </label>        
-        </div>  
-        <div className="form__item">
-          <button type="submit">
-            Submit
-          </button>
-        </div>      
-      </form>
-      </div>      
-    </div>    
-  </section>
-    
+    <section className="contact">
+      <div className="container">
+        <header className="contact__title">
+          <h2>Get in touch</h2>
+        </header>
+        <div className="contact__form">
+          <form className="form" method="POST" netlify="true" action="/success" className="form">
+            <div className="form__item">
+              <label htmlFor="name">
+                Name
+            <input name="name" type="text" />
+              </label>
+            </div>
+            <div className="form__item">
+              <label htmlFor="email">
+                Email
+            <input name="email" type="email" />
+              </label>
+            </div>
+            <div className="form__item">
+              <label htmlFor="message">
+                Message me!
+            <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10">
+                </textarea>
+              </label>
+            </div>
+            <div className="form__item">
+              <button className="button" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </Layout>
 )
 
