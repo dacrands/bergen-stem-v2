@@ -967,6 +967,14 @@ pre tt:after {
   text-decoration: none;
 }
 
+.button-scroll {
+  position: fixed;
+  display: none;
+  bottom: 5vh;
+  right: 1rem;
+  z-index: 2;
+}
+
 .button:hover {
   background: #131314;
   transform: translateY(-2px);

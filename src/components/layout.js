@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Navbar from './navbar'
 import Footer from './footer'
 import './layout.css'
+import ScrollToTop from './scrollToTop';
 
 const Layout = ({ children }) => (  
   <StaticQuery
@@ -30,9 +31,10 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>        
           <Navbar siteTitle={data.site.siteMetadata.title} />
-          <div style={{minHeight: "100vh", flex:"1"}}>
+          <div style={{minHeight: "100vh"}}>
           {children}
-          </div>            
+          <ScrollToTop />
+          </div>                      
           <Footer />
       </>
     )}
