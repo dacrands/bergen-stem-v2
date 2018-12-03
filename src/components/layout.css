@@ -967,7 +967,12 @@ pre tt:after {
   text-decoration: none;
 }
 
-.button-scroll {
+.button:hover {
+  background: #131314;
+  transform: translateY(-2px);
+}
+
+.button--scroll {
   position: fixed;
   display: none;
   bottom: 5vh;
@@ -975,10 +980,7 @@ pre tt:after {
   z-index: 2;
 }
 
-.button:hover {
-  background: #131314;
-  transform: translateY(-2px);
-}
+
 
 .success {
   height: calc(50vh);

@@ -10,12 +10,16 @@ class ScrollToTop extends Component {
     }
     scrollTop = () => {
         console.log(window.scrollY)
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); 
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+        window.scrollTo({top:0, behavior:"smooth"})
     }
 
     render() {
         return (
-            <button ref="scrollBtn" onClick={this.scrollTop.bind(this)} className="button button-scroll">
+            <button 
+                ref="scrollBtn" 
+                onClick={this.scrollTop.bind(this)} 
+                className="button button--scroll">
                 Scroll To Top
             </button>
         )
