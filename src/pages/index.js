@@ -23,15 +23,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-// export const query = graphql`
-//   query {
-//     cardImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 300) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-// }
-// `

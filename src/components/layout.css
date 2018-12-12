@@ -772,7 +772,7 @@ pre tt:after {
 
 .info__item {
   max-width: 300px;
-  margin-right: 1rem;
+  margin: 1.25rem;
 }
 
 .info__item h3 {
