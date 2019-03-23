@@ -6,7 +6,7 @@ const ImageThree = () => (
   <StaticQuery
     query={graphql`
         query {
-          ImageTwo: file(relativePath: { eq: "bergen.jpg" }) {
+          ImageTwo: file(relativePath: { eq: "groundstation.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 600) {
                 ...GatsbyImageSharpFluid

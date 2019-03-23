@@ -638,6 +638,19 @@ pre tt:after {
       ME
 *************
 ************* */
+$primary-dark: #1a075ee6;
+$primary-dark-bg: hsl(253, 100%, 23%);
+$primary: #3f19c7f1;
+$primary-bg: hsl(253, 100%, 26%);
+$primary-light: #3e1fadf1;
+$primary-light-bg: hsl(253, 100%, 46%);
+$light: #f1f1f1;
+$dark: #424040;
+$med: #575252;
+$comp: #FFD513;
+$comp-light: hsla(49, 92%, 75%, 0.849);
+
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -653,7 +666,7 @@ pre tt:after {
 }
 
 .header h1 {
-  color: blue;
+  color: $primary;
 }
 
 .header h3 {
@@ -701,7 +714,7 @@ pre tt:after {
 }
 
 .navbar__link a:hover  {
-  color: blue;
+  color: $primary;
 }
 
 
@@ -718,7 +731,7 @@ pre tt:after {
 }
 
 .main__info { 
-  color: blue;
+  color: $primary;
   
   position: relative;
 }
@@ -733,8 +746,12 @@ pre tt:after {
 }
 
 .main__side {
-  border-right: 1px dashed blue;
+  border-right: 1px dashed $primary;
   border-right: none;
+}
+
+.main__side--small {
+  max-width: 300px;
 }
 
 .main__side ul {
@@ -757,8 +774,8 @@ pre tt:after {
 }
 
 .main__side a:hover {  
-  border-bottom: 1px solid blue;  
-  color: blue;
+  border-bottom: 1px solid $primary;  
+  color: $primary;
 }
 
 .info {
@@ -776,7 +793,7 @@ pre tt:after {
 }
 
 .info__item h3 {
-  color: blue;
+  color: $primary;
 }
 
 .projects {
@@ -798,7 +815,7 @@ pre tt:after {
 
 .projects h1 {
   color: orange;  
-  color: blue;  
+  color: $primary;  
 }
 
 .card {  
@@ -871,19 +888,53 @@ pre tt:after {
 }
 
 .contact__title {
-  text-align: center;
+  // text-align: center;
 }
 
 .contact h1 {  
-  color: blue;
+  color: $primary;
 }
 
 .contact h2 {
   font-weight: 400;
 }
 
-.about p {
-  max-width: 400px;  
+.about {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 5rem;
+  align-items: center;
+  border-bottom: 1px dashed rgb(110, 102, 102);
+  // border-bottom: 1px dashed rgb(110, 102, 102);
+  // border-bottom: 1px dashed rgb(110, 102, 102);
+  padding: 1rem;  
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  z-index: 2;
+  border-top: 3px solid rgb(110, 102, 102);
+}
+
+.about__img {
+  // max-width: 500px;
+  flex-grow: 1;
+  margin: 2rem;
+  min-width: 150px;
+}
+
+.about__content {
+  margin: 1rem 0;
+  p {max-width: 500px;}
+}
+
+
+.about p {  
   color: rgb(89, 89, 114);  
 }
 
@@ -934,30 +985,28 @@ pre tt:after {
 
 .form__item {
   margin: 3rem 0;
-  color: blue;
-}
+  color: $primary;
 
-.form__item label{
-  display: flex;
-  flex-direction: column;
-  
-}
+    label{
+    display: flex;
+    flex-direction: column;
+    
+  }
 
-.form__item input {
-  border: none;
-  border-bottom: 1px dashed rgb(110, 102, 102);
-  /* border-bottom: 1px dashed blue; */
-  margin-top: 1rem;
-}
+  input {
+    border: none;
+    border-bottom: 1px dashed rgb(110, 102, 102);
+  }
 
-.form__item textarea {
-  margin-top: 1rem;  
-  border: 1px dashed rgb(110, 102, 102);  
-  /* border: 1px dashed blue;   */
+  textarea {
+    margin-top: 1rem;  
+    border: 1px dashed rgb(110, 102, 102);  
+    /* border: 1px dashed $primary;   */
+  }
 }
  
 .button {
-  background: blue;
+  background: $primary;
   border: none;
   color: white;
   padding: 0.25rem 0.5rem;
@@ -991,7 +1040,7 @@ pre tt:after {
 }
 
 .success h1 {
-  color: blue
+  color: $primary
 }
 
 .success h3 {
@@ -1107,7 +1156,7 @@ pre tt:after {
     line-height: 100%;
     font-size: 2rem;
     padding: 0.25rem;
-    background: blue;
+    background: $primary;
     color: white;
     cursor: pointer;
     border: none;

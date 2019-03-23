@@ -1,29 +1,22 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 
 const Landing = () => (
 
 <main className="main">
-
     <div className="main__info">
-        <h1>David Crandall</h1>
-        <h3>React / Flask Developer</h3>
+        <h1>Bergen STEM</h1>
+        <h3>Science, Technology, Engineering, Mathematics</h3>
         <p>
-        From responsive web-design to user authentication, 
-        I love all aspects of building a website.
-            </p>
-        {/* <p>
-            This site documents some of my old and perhaps
-            new data science projects. Thanks for stopping by!
-            </p> */}
+
+        </p>
     </div>
-    <div className="main__side">
-        {/* <h3>Links</h3> */}
+    <div className="main__side main__side--small">
         <ul>
-            <li><a href="http://">Github</a></li>
-            <li><a href="http://">Blog</a></li>
-            <li><a href="http://">Resume</a></li>
-            <li><a href="http://">Contact</a></li>
+            <li><Link to="about">About</Link></li>
+            <li><a href="#contact">Join STEM</a></li>
+            <li><a href="http://">3SP Program</a></li>
+            <li><a href="http://">Running Start Program</a></li>            
         </ul>
     </div>
 </main>

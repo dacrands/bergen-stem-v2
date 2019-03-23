@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Navbar from './navbar'
 import Footer from './footer'
-import './layout.css'
+import './layout.scss'
 import ScrollToTop from './scrollToTop';
 
 const Layout = ({ children }) => (  

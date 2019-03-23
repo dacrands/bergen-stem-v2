@@ -34,13 +34,11 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <section className="contact">
-         <header className="contact__title">
-        <h1>Contact</h1>
-          <h2>Get in touch</h2>
-        </header>
+      <section className="contact">         
         <div className="contact__form">
+       
         <form
+        
         className="form"
           name="contact"
           method="post"
@@ -48,7 +46,9 @@ export default class Contact extends React.Component {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
-        >
+        >         
+          <h2>Join Stem</h2>
+          
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
@@ -59,20 +59,20 @@ export default class Contact extends React.Component {
           </p>
           <p className="form__item">
             <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
+              Your name:
+              <input required type="text" name="name" onChange={this.handleChange} />
             </label>
           </p>
           <p className="form__item">
             <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
+              Your email:
+              <input required type="email" name="email" onChange={this.handleChange} />
             </label>
           </p>
           <p className="form__item">
             <label>
-              Message:<br />
-              <textarea rows="10" name="message" onChange={this.handleChange} />
+              Message:
+              <textarea required rows="10" name="message" onChange={this.handleChange} />
             </label>
           </p>
           <p>
