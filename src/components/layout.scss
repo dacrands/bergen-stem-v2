@@ -868,6 +868,12 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
 
 }
 
+.card__small {
+  align-items: flex-start;  
+  .card__content {
+    max-width: 400px;
+  }
+}
 
 .box {
   padding: 2rem 0;
@@ -1011,8 +1017,15 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
   display: inline-block;
 }
 
+.button--outline {
+  color: $dark;
+  background: white;
+  border: 1px solid $med;
+}
+
 .button:hover {
   background: #131314;
+  color: white;
   transform: translateY(-2px);
 }
 
