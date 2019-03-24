@@ -1,104 +1,67 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-import Image from '../components/image'
-import ImageTwo from '../components/imageTwo'
-import ImageThree from '../components/imageThree'
-import ImageFour from '../components/imageFour'
+import School from '../images/svg/school.svg'
+import Join from '../images/svg/join.svg'
+import Book from '../images/svg/books.svg'
 
 
 const Projects = () => (
   <section id="projects" className="projects">
     <header className="projects__title">
-      <h1>Projects</h1>
-      <h3>Some of the things I've built</h3>
+      <h2>Studying STEM at BCC</h2>
+      <h3>Science, Technology, Engineering, Mathematics</h3>
+
     </header>
     <div className="projects__main">
-      <div className="card">        
+      <div className="card">
         <div className="card__img">
-          <Image />
+          <Book />
+          <a className="button" rel="noopener" target="_blank" href="https://bergen.edu/wp-content/uploads/Running-Start-Program-Poster-With-Link-1.pdf">
+            Running Start &#x2197;</a>
         </div>
         <div className="card__content">
-          <div className="card__title">
-            <h3>New York Times App</h3>
-            <p><em>React, Redux, Sass, Flask, Digitalocean</em></p>
-          </div>
+          <h3>Running Start Program</h3>
+          <p>Prep Classes are designed to give students a better
+              foundation to start the courses they will be taking in
+            the upcoming semesters.</p>
           <p>
-            View the NYT Best-Sellers, browse popular articles,
-            search archives dating back to the year 1900.
-        </p>
-          <p>
-            Fetches data from a Flask app that implements
-        </p>
-          <div className="card__links">
-            <a href="https://times.dcrands.com">NYT App</a>
-            <a href="">Github</a>
-          </div>
-        </div>
-      </div>
-      <div className="card">
-      <div className="card__img">
-          <ImageTwo />
-        </div>
-        <div className="card__content">               
-        <div className="card__title">
-            <h3>To View It</h3>
-            <p><em>Flask, Heroku, Postgreql</em></p>
-          </div>
-          <p>
-            A to-do list application that features weather information,
-            a stock-ticker, and full-screen background video.
-        </p>
-          <p>
-            Imeplements email authentication using Sendgrid. Users
-            can save stocks, todos, and YouTube videos.
-        </p>
-          <div className="card__links">
-            <a href="https://times.dcrands.com">To View It</a>
-            <a href="">Github</a>
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        
-        <div className="card__img">
-          <ImageThree />
-        </div>
-        <div className="card__content">
-          <div className="card__title">
-            <h3>Bergen STEM</h3>
-            <p><em>React, Webpack, Fetch-API, 
-responsive web-design via custom CSS</em></p>
-          </div>
-          <p>Showcases student projects, scholarship opportunities,
-            and department information for the STEM program at Bergen Community College.
-          </p>
-          <div className="card__links">
-            <a href="https://times.dcrands.com">NYT App</a>
-            <a href="">Github</a>
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        
-        <div className="card__img">
-          <ImageFour />
-        </div>
-        <div className="card__content">
-          <div className="card__title">
-            <h3>Blog</h3>
-            <p><em>GatsbyJS, Markdown CMS, Styled components,
-              YAML front matter</em></p>
-          </div>
-          <p>
-            Personal blog site where I write about programming.
-          </p>
-          <div className="card__links">
-            <a href="https://times.dcrands.com">NYT App</a>
-            <a href="">Github</a>
-          </div>
+            Eligible students have the option of taking the respective
+            proficiency exam after completing the boot camp and possibly
+            test out of the course.
+                        </p>
         </div>
       </div>
 
+      <div className="card">
+        <div className="card__content">
+          <h3>STEM Student Scholars Program</h3>
+          <p>Promotes excellence
+            in knowledge, skills and ability of a select group of STEM students
+            to ensure their success in securing research internships and successful
+            transfer to their targeted 4-year institution.</p>
+        </div>
+        <div className="card__img">
+          <School />
+          <Link className="button" to="3sp">3SP</Link>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card__img">
+          <Join />
+          <a className="button" target="_blank" rel="noopener" href="https://bergen.edu/faculty-staff/grants-administration/awards/stem/stem-summit/">
+            STEM Summit &#x2197;
+          </a>
+        </div>
+        <div className="card__content">
+          <h3>STEM C<sup>2</sup> Research Summit</h3>
+          <p>A competitive conference that promotes the intellectual and investigative development of students, 
+            faculty and staff in the Science, Technology, Engineering and Mathematics fields and fosters
+            strong collaboration among community colleges, high schools 
+            and four-year colleges and universities in the state of New Jersey</p>
+        </div>
+      </div>
     </div>
   </section>
 );
