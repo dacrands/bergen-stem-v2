@@ -18,7 +18,6 @@ const IndexPage = () => (
     </div>
     <Skills />
     <Contact />
-
   </Layout>
 )
 

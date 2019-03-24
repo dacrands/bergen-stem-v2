@@ -1,92 +1,112 @@
-import React from "react";
-import { navigateTo } from "gatsby-link";
+import React from 'react'
+import { navigateTo } from 'gatsby-link'
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
   handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
     })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
+      .then(() => navigateTo(form.getAttribute('action')))
+      .catch(error => alert(error))
+  }
 
   render() {
     return (
-      <section className="contact">         
+      <section className="contact">
         <div className="contact__form">
-       
-        <form
-        
-        className="form"
-          name="contact"
-          method="post"
-          action="/success/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >         
-          <h2>Join STEM</h2>
-          
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p className="form__item">
-            <label>
-              Your name:
-              <input required type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p className="form__item">
-            <label>
-              Your email:
-              <input required type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p className="form__item">
-            <label>
-              Major:
-              <input required type="text" name="major" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p className="form__item">
-            <label>
-              Research Interests:
-              <textarea required rows="10" name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button className="button" type="submit">Send</button>
-          </p>
-        </form>
-        </div>        
+          <form
+            className="form"
+            name="contact"
+            method="post"
+            action="/success/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+            <h2>Join STEM</h2>
+
+            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out:{' '}
+                <input name="bot-field" onChange={this.handleChange} />
+              </label>
+            </p>
+            <p className="form__item">
+              <label>
+                Your name:
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p className="form__item">
+              <label>
+                Your email:
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p className="form__item">
+              <label>
+                Major:
+                <input
+                  required
+                  type="text"
+                  name="major"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p className="form__item">
+              <label>
+                Research Interests:
+                <textarea
+                  required
+                  rows="10"
+                  name="message"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <button className="button" type="submit">
+                Send
+              </button>
+            </p>
+          </form>
+        </div>
       </section>
-    );
+    )
   }
 }

@@ -26,13 +26,16 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img 
-      style={{               
-        width: "100%", 
-        maxHeight: "240px",
-        padding: "1rem"                       
-      }}
-      fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        style={{
+          width: '100%',
+          maxHeight: '240px',
+          padding: '1rem',
+        }}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    )}
   />
 )
 
