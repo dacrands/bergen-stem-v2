@@ -23,7 +23,7 @@ const Landing = () => (
           <a href="#contact">Join STEM</a>
         </li>
         <li>
-          <a href="http://">3SP Program</a>
+        <Link to="3sp">STEM Student Scholars</Link>
         </li>
         <li>
           <a
