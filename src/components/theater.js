@@ -1,10 +1,10 @@
 import React from 'react'
 import Video from './video'
 
-const Skills = () => (
+const Theater = () => (
   <section className="skills">
     <div className="container">
-      <div className="box">
+      <div className="box box--big">
         <div className="box__item">
           <h2>Students talk STEM</h2>
           <p>
@@ -20,4 +20,4 @@ const Skills = () => (
   </section>
 )
 
-export default Skills
+export default Theater

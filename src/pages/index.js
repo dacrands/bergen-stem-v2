@@ -1,12 +1,10 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import { Img } from 'gatsby-image'
 
 import Layout from '../components/layout'
 import Landing from '../components/landing'
 import Info from '../components/info'
 import Projects from '../components/projects'
-import Skills from '../components/skills'
+import Theater from '../components/theater'
 import Contact from '../components/contact'
 
 const IndexPage = () => (
@@ -16,7 +14,7 @@ const IndexPage = () => (
       <Info />
       <Projects />
     </div>
-    <Skills />
+    <Theater />
     <Contact />
   </Layout>
 )
