@@ -10,10 +10,10 @@ const Info = () => (
       </p>
     </div>
     <div className="info__item">
-      <h3>Scholarships</h3>
+      <h3>Research</h3>
       <p>
-        Interested in joining a research project or submitting your own research
-        proposal? Let us know!
+      From rockets to algae biodiesel, Bergen Community college 
+      offers STEM students a wide variety of research opportunities.
       </p>
     </div>
     <div className="info__item">
