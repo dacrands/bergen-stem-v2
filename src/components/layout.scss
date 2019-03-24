@@ -786,7 +786,7 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
   margin: 5vh 0;
   border-top: 1px dashed rgb(143, 155, 158);
   border-bottom: 1px dashed rgb(143, 155, 158);
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .info__item {
@@ -849,16 +849,17 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
 .card__content {
   max-width: 500px;  
   margin: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card__svg {
   margin: 1rem;
   svg {
+    margin: 0 auto;
     fill: #424040;
     display: block;
     width: 150px;
-    height: 150px;
-    margin-bottom: 1rem;
+    height: 150px;    
   }  
 }
 
