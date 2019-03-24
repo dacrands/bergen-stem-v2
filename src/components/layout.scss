@@ -880,6 +880,10 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
   // padding-top: 2rem;
 }
 
+.box--big {
+  padding: 5rem 0;
+}
+
 .skills {
   background: #131314;  
   color: white;
@@ -1129,10 +1133,7 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
     height: 80px;
   }
 
-  .main {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
   .info {
     flex-direction: column;
   }
@@ -1176,6 +1177,11 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
     color: white;
     cursor: pointer;
     border: none;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
