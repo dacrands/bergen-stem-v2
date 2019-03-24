@@ -47,7 +47,7 @@ export default class Contact extends React.Component {
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >         
-          <h2>Join Stem</h2>
+          <h2>Join STEM</h2>
           
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
@@ -71,7 +71,13 @@ export default class Contact extends React.Component {
           </p>
           <p className="form__item">
             <label>
-              Message:
+              Major:
+              <input required type="text" name="major" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p className="form__item">
+            <label>
+              Research Interests:
               <textarea required rows="10" name="message" onChange={this.handleChange} />
             </label>
           </p>
