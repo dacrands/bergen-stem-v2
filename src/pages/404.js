@@ -3,8 +3,13 @@ import Layout from '../components/layout'
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="container">
+      <header className="header">
+        <h1>NOT FOUND</h1>
+        <h3>That page doesn't seem to exist</h3>
+        <button className="button button--outline" onClick={() => window.history.back()}>Go Back</button>
+      </header>
+    </div>    
   </Layout>
 )
 
