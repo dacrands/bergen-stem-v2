@@ -1,15 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import Logo from '../images/svg/color-logo.svg'
 const Landing = () => (
 
 <main className="main">
     <div className="main__info">
-        <h1>Bergen STEM</h1>
-        <h3>Science, Technology, Engineering, Mathematics</h3>
-        <p>
-
-        </p>
+        <Logo title="Bergen STEM" style={{ height: '100%', width: '100%', maxHeight: '200px', marginBottom: "2rem"}}/>
+        {/* <h1>Bergen STEM</h1> */}
+        {/* <h3>Science, Technology, Engineering, Mathematics</h3> */}
     </div>
     <div className="main__side main__side--small">
         <ul>
