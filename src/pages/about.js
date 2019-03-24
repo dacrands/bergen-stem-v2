@@ -65,9 +65,9 @@ const SecondPage = () => (
         </div>
       </div>
 
-      <div className="clear">
-        <Link to="/">Go back home</Link>
-      </div>
+      
+      <button className="button button--outline" onClick={() => window.history.back()}>Go Back</button>
+      
     </div>
   </Layout>
 )
