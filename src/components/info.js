@@ -6,6 +6,7 @@ const Info = () => (
             <h3>About</h3>
             <p>
             Our mission is to provide our STEM students with the skills essential to success at 4-year institutions and beyond.
+            
               </p>
         </div>
         <div className="info__item">
@@ -17,7 +18,7 @@ const Info = () => (
         <div className="info__item">
             <h3>Join STEM</h3>
             <p>
-            Interested in joining a research project or submitting your own research proposal? Let us know!
+            Interested in joining a research project or submitting your own research proposal? <a href="#contact">Let us know!</a>
               </p>
         </div>
     </section>
