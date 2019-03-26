@@ -17,11 +17,8 @@ const Landing = () => (
     <div className="main__side main__side--small">
       <ul>
         <li>
-          <Link to="about">About</Link>
-        </li>
-        <li>
-          <a href="#contact">Join STEM</a>
-        </li>
+          <Link to="about">STEM at BCC</Link>
+        </li>        
         <li>
         <Link to="3sp">STEM Student Scholars</Link>
         </li>
@@ -33,6 +30,9 @@ const Landing = () => (
           >
             Running Start Program
           </a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
         </li>
       </ul>
     </div>
