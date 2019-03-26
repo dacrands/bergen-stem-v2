@@ -25,7 +25,7 @@ const SecondPage = () => (
             At Bergen Community College, our STEM faculty understand the value
             of proper research experience in a student's academic career. Our
             program provides students the guidance and support they need to
-            answer the scientific questions that interest them most.
+            ask the scientific questions that interest them most.
           </p>
         </div>
       </div>
