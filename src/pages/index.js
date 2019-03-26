@@ -11,7 +11,11 @@ const IndexPage = () => (
   <Layout>
     <div className="container">
       <Landing />
+    </div>     
+    <div className="container container--big">
       <Info />
+    </div>
+    <div className="container">
       <Projects />
     </div>
     <Theater />
