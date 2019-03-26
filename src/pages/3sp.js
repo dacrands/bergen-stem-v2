@@ -30,7 +30,8 @@ const StudentScholars = () => (
           in securing research internships and successful transfer to their targeted 4-year institution.
       </p>
         </div>
-        <div className="card__content">
+        
+        {/* <div className="card__content">
           <h3>KSA Learning</h3>
           <ul>
             <li> <em>Knowledge</em>
@@ -49,7 +50,8 @@ const StudentScholars = () => (
               </ul>
             </li>
           </ul>
-        </div>   
+        </div>    */}
+
       </div>
       </section>
       
@@ -62,7 +64,7 @@ const StudentScholars = () => (
             <h3>Eligibility Requirements</h3>
             <ol>
               <li>STEM degree seeking</li>
-              <li>Minimum 3.750 Cumulative GPA</li>
+              <li>Minimum 3.75 Cumulative GPA</li>
               <li>Finished 12 college level credits with no additional remediation required</li>
             </ol>
           </div>
