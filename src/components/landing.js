@@ -5,7 +5,7 @@ const Landing = () => (
   <main className="main">
     <div className="main__info">
       <Logo
-        title="Bergen STEM"
+        alt="Bergen STEM"
         style={{
           height: '100%',
           width: '100%',
