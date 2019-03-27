@@ -11,7 +11,7 @@ const Projects = () => (
       <h2>Studying STEM at BCC</h2>
       <h3>Science, Technology, Engineering, Mathematics</h3>
     </header>
-    <div className="projects__main">
+    <div className="projects__main container">
       <div className="card">
         <div className="card__svg">
           <Book />
