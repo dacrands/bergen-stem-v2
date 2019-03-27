@@ -60,7 +60,8 @@ const SecondPage = () => (
             >
               free prep classes
             </a>{' '}
-            and award-winning tutoring services to get the
+            and award-winning tutoring services to get the support you
+            need.
           </p>
         </div>
       </div>

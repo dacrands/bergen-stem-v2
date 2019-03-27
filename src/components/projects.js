@@ -69,7 +69,7 @@ const Projects = () => (
             investigative development of students, faculty and staff in the
             Science, Technology, Engineering and Mathematics fields and fosters
             strong collaboration among community colleges, high schools and
-            four-year colleges and universities in the state of New Jersey
+            four-year colleges and universities in the state of New Jersey.
           </p>
           <a
             className="button"
