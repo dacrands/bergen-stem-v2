@@ -11,7 +11,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <button className="navbar__show" onClick={this.showMenu}>
+        <button aria-label="menu button" className="navbar__show" onClick={this.showMenu}>
           {' '}
           &#x2630;
         </button>
