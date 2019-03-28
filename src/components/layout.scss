@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 
+// *************************
+// This code was not written
+// by me, David Crandall.
+// My work starts at line 642.
+// *************************
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -633,10 +639,8 @@ pre tt:after {
 
 
 
-/* *************
-*************
-      ME
-*************
+/**************
+
 ************* */
 $primary-dark: #1a075ee6;
 $primary-dark-bg: hsl(253, 100%, 23%);
@@ -651,6 +655,11 @@ $comp: #FFD513;
 $comp-light: hsla(49, 92%, 75%, 0.849);
 
 
+// =============
+//
+//    HELPER
+//
+// =============
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -661,24 +670,32 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
   max-width: 1200px;
 }
 
+.content {
+  max-width: 500px;
+}
 
+// =============
+//
+//    HEADER
+//
+// =============
 .header {
   padding: 5vh 0;
+  h1 {
+    color: $primary;
+  }
+  h3 {
+    font-weight: 400;
+  }
 }
 
-.header h1 {
-  color: $primary;
-}
 
-.header h3 {
-  font-weight: 400;
-}
 
-.logo {
-  height: 30px;
-  fill: #131314 !important;
-}
-
+// =============
+//
+//    NAVBAR
+//
+// =============
 .navbar {
   position: fixed;
   display: flex;    
@@ -705,22 +722,24 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
   color: $med;
   height: 100%;  
   text-decoration: none;  
+  &:hover {
+    color: $primary;    
+  }
 }
-
 
 .navbar__hr {
   width: 0;
   transform-origin: 100%;
   transition: all 200ms ease;
-  margin: 0;
-  
-}
-
-.navbar__link a:hover  {
-  color: $primary;
+  margin: 0;  
 }
 
 
+// =============
+//
+//     MAIN
+//
+// =============
 .main {  
   margin: 5vh 0;  
   display: flex;   
@@ -923,10 +942,15 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
 
 .contact {
   padding: 5vh 1rem;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-gap: 1rem;
   h2 {
-    font-weight: 400;
+    color: $primary;
   }
 }
+
+
 
 
 // ==================
@@ -982,28 +1006,28 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
 //       FORM
 // ==================
 .form {
-  max-width: 500px;
-  margin: 0 auto;
+  flex-grow: 2;
+}
+
+.form__box {
+  // outline: 1px solid red;
+  margin: 1rem 0;
 }
 
 .form__item {
-  margin: 3rem 0;
+  margin: 1rem 0;
   color: $primary;
   label {
     display: flex;
     flex-direction: column;
     
   }
-
-  input {
-    border: none;
-    border-bottom: 1px dashed rgb(110, 102, 102);
-  }
-
+  input,
+  select,
   textarea {
-    margin-top: 1rem;  
-    border: 1px dashed rgb(110, 102, 102);  
-    /* border: 1px dashed $primary;   */
+    border: none;    
+    background: $light; 
+    padding: 0.35rem;
   }
 }
 
@@ -1135,11 +1159,11 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
     height: 80px;
   }
 
-
   .info {
     flex-direction: column;
     align-items: center;
   }
+
   .card {
     grid-template-columns: 1fr;
   }
@@ -1149,6 +1173,10 @@ $comp-light: hsla(49, 92%, 75%, 0.849);
 
   .skills__content {
     flex-direction: column;
+  }
+
+  .contact {
+    display: block;
   }
 }
 

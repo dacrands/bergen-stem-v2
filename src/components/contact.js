@@ -1,6 +1,8 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
 
+const MAJORS = ["Physics", "Engineering", "Chemistry", "Biology", "CompSci", "Mathematics"]
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -34,18 +36,23 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <section className="contact">
+      <section className="container contact">
+        <header className="header contact__header">
+          <h2>Contact Us</h2>
+          <h3>Have an idea for a research project?</h3>
+          <h3>Interested in joining the STEM club?</h3>
+          <h3>Let us know!</h3>
+        </header>
         <div className="contact__form">
           <form
-            className="form"
+            className="form content"
             name="contact"
             method="post"
             action="/success/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
-          >
-            <h2>Join STEM</h2>
+          >            
 
             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
             <input type="hidden" name="form-name" value="contact" />
@@ -55,9 +62,10 @@ export default class Contact extends React.Component {
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </p>
+            <div className="form__box">
             <p className="form__item">
               <label>
-                Your name:
+                Name
                 <input
                   required
                   type="text"
@@ -68,7 +76,7 @@ export default class Contact extends React.Component {
             </p>
             <p className="form__item">
               <label>
-                Your email:
+                Email
                 <input
                   required
                   type="email"
@@ -79,15 +87,22 @@ export default class Contact extends React.Component {
             </p>
             <p className="form__item">
               <label>
-                Major:
-                <input
-                  required
-                  type="text"
+                Major
+                <select
+                  required                  
                   name="major"
                   onChange={this.handleChange}
-                />
+                >
+                  {
+                    MAJORS.map(m => (
+                      <option value={m}>{m}</option>
+                  ))
+                }
+                </select>
               </label>
             </p>
+            <div className="form__box">
+            </div>
             <p className="form__item">
               <label>
                 Research Interests:
@@ -104,6 +119,8 @@ export default class Contact extends React.Component {
                 Send
               </button>
             </p>
+            </div>            
+          
           </form>
         </div>
       </section>
