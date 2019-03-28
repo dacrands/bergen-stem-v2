@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 const primaryColor = '#3f19c7f1'
+const linkStyle = { color: primaryColor }
 
 class Navbar extends Component {
   showMenu = () => {
@@ -17,17 +18,17 @@ class Navbar extends Component {
         </button>
         <nav ref="navbar" className="navbar">
           <div className="navbar__link">
-            <Link to="/" activeStyle={{ color: primaryColor }}>
+            <Link to="/" activeStyle={{ linkStyle }}>
               Home
             </Link>
           </div>
           <div className="navbar__link">
-            <Link to="/about" activeStyle={{ color: primaryColor }}>
+            <Link to="/about" activeStyle={ linkStyle }>
               About
             </Link>
           </div>
           <div className="navbar__link">
-            <Link to="/3sp" activeStyle={{ color: primaryColor }}>
+            <Link to="/3sp" activeStyle={{ linkStyle }}>
               3sp
             </Link>
           </div>
