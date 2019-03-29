@@ -39,9 +39,9 @@ export default class Contact extends React.Component {
       <section className="container contact">
         <header className="header contact__header">
           <h2>Contact Us</h2>
-          <h3>Have an idea for a research project?</h3>
-          <h3>Interested in joining the STEM club?</h3>
-          <h3>Let us know!</h3>
+          <p>Have an idea for a research project?</p>
+          <p>Interested in joining the STEM club?</p>
+          <p>Let us know!</p>
         </header>
         <div className="contact__form">
           <form
@@ -95,7 +95,7 @@ export default class Contact extends React.Component {
                 >
                   {
                     MAJORS.map(m => (
-                      <option value={m}>{m}</option>
+                      <option key={m} value={m}>{m}</option>
                   ))
                 }
                 </select>
