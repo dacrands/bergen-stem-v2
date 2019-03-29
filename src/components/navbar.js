@@ -18,7 +18,7 @@ class Navbar extends Component {
         </button>
         <nav ref="navbar" className="navbar">
           <div className="navbar__link">
-            <Link to="/" activeStyle={{ linkStyle }}>
+            <Link to="/" activeStyle={ linkStyle }>
               Home
             </Link>
           </div>
@@ -28,7 +28,7 @@ class Navbar extends Component {
             </Link>
           </div>
           <div className="navbar__link">
-            <Link to="/3sp" activeStyle={{ linkStyle }}>
+            <Link to="/3sp" activeStyle={ linkStyle }>
               3sp
             </Link>
           </div>
